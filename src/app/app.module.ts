@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { DrinkComponent } from './drink/drink.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
